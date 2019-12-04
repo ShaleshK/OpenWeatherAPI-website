@@ -40,58 +40,69 @@
                   <a class="nav-link" href="Data.html">Data</a>
                 </li>
             </ul>
-              <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
           </div>
         </form>
-  </nav>
-        <div class="container">
-            <div class="row">
-              <div class="col-md-8">
-                  <div class="jumbotron">
-                    <h1>Humidity</h1>
-                    <div class="row">
-                          <img src="Lat_Humid.png" alt="..." class="img-main">
+        </nav>
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+              <div class="jumbotron">
+                <h1>Summary: Latitude vs. X</h1>
+                <div class="row">
+                    <div class="col-md-4">
+                      <a href="Temperature.html">
+                        <img src="Lat_Temp.png" width="200" height="232" alt="..." class="img-main" class = “img-fluid”>
+                      </a>
                     </div>
-                    <div class="row"> 
-                          <p>Humidity seems evenly distributed around the earth generally and across the Southern & Northern Hemispheres in particular.  The major finding here is that most of the earth is humid since this graph shows cities disproportionately and densely in the 60%-100% humidity range.  There are far fewer cities in arid climates below 60% humidity.
-                          </p>
-                    </div>
-                  </div>
+                    <div class="col-md-8"> 
+                      <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset of over 500 cities.
+                      </p>
+                      <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather versus latitude.  Factors we looked at included: 
+                      </div>
+                <!-- <div class ="row" > -->
+                  <p>temperature, cloudiness, wind speed, and humidity.  This site provides the source data and visualizations created as part of the analysis, as well as any explanations and descriptions of any trends and correlations witnessed.
+                    </p>
+                <!-- </div> -->
               </div>
-              <div class="col-sm-8 col-md-4">
-                  <div class="jumbotron">
-                    <h1>Visualizations</h1>
-                    <div class="row">
-                        <div >
-                          <a href="Temperature.html">
-                          <img src="Lat_Temp.png" alt="..." class="img-thumbnail">
-                          </a>
-                        </div>
-                        <div >
-                          <a href="Humidity.html">
-                          <img src="Lat_Humid.png" alt="..." class="img-thumbnail">
-                          </a>    
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div >
-                          <a href="Cloudiness.html">
-                          <img src="Lat_Cloud.png" alt="..." class="img-thumbnail">
-                          </a>
-                        </div>
-                        <div >
-                          <a href="WindSpeed.html">
-                          <img src="Lat_Wind.png" alt="..." class="img-thumbnail">
-                          </a>
-                        </div>
-                     </div>      
-              </div>
-            </div>
           </div>
+          
+          
+      </div>
+
+      <div class="col-sm-8 col-md-4">
+        <div class="jumbotron">
+          <h1>Visualizations</h1>
+          <div class="row">
+              <div >
+                <a href="Temperature.html">
+                 <img src="Lat_Temp.png" alt="..." class="img-thumbnail" style="height:100px" class = “img- fluid”>
+                </a>
+              </div>
+              <div>
+                <a href="Humidity.html">
+                <img src="Lat_Humid.png" alt="..." class="img-thumbnail" style='height:100px'class = “img- fluid”>
+                </a>
+              </div>
+          </div>
+          <div class="row">
+              <div>
+                <a href="Cloudiness.html">
+                  <img src="Lat_Cloud.png" alt="..." class="img-thumbnail" style='height:100px'class = “img- fluid”>
+                </a>
+              </div>
+              <div>
+                <a href="WindSpeed.html">
+                  <img src="Lat_Wind.png" alt="..." class="img-thumbnail" style='height:100px'class = “img- fluid”>
+                </a>
+              </div>
+           </div>     
+       </div>
+    </div>
   </body>
 
 </html>
 
 
       <!-- #--bootstrap grid that must be two visualizations across on screens medium and larger, and 1 across on extra-small and small screens
-    #Data page with responsive bootstrap table component with Data coming from csv exported by Pandas' "to_html" method --> -->
+    #Data page with responsive bootstrap table component with Data coming from csv exported by Pandas' "to_html" method --> 
